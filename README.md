@@ -1,4 +1,4 @@
-# stopwatch-vue
+# Stopwatch-vue
 
 ### Deskripsi
 
