@@ -1,0 +1,40 @@
+
+:root {
+    --app-main-color: rgb(0, 173, 181);
+    --app-main-color-op-5: rgba(0, 173, 181,0.5);
+    --app-main-color-op-2: rgba(0, 173, 181,0.2);
+    --background-color: rgb(251, 251, 254);
+    --text-color: rgb(43, 42, 51);
+    --background-button-color-off: rgb(190, 180, 220);
+    --background-button-color-on: rgba(155, 145, 180, 0.5);
+    --button-active-outline-color:rgb(0, 221, 255);
+    --shadow: 0 2px 6px rgba(255, 255, 255, 0.15);
+    --shadow-top: 0 -2px 6px rgba(255, 255, 255, 0.15);
+    --shadow-bottom: 0 2px 6px rgba(255, 255, 255, 0.15);
+}
+.app[data-theme="light"] {
+    --app-main-color: rgb(0, 173, 181);
+    --app-main-color-op-5: rgba(0, 173, 181,0.5);
+    --app-main-color-op-2: rgba(0, 173, 181,0.2);
+    --background-color: rgb(251, 251, 254);
+    --text-color: rgb(43, 42, 51);
+    --background-button-color-off: rgb(190, 180, 220);
+    --background-button-color-on: rgba(155, 145, 180, 0.5);
+    --button-active-outline-color:rgb(0, 221, 255);
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    --shadow-top: 0 -2px 6px rgba(0, 0, 0, 0.15);
+    --shadow-bottom: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.app[data-theme="dark"] {
+    --app-main-color: rgb(0, 173, 181);
+    --app-main-color-op-5: rgba(0, 173, 181,0.5);
+    --app-main-color-op-2: rgba(0, 173, 181,0.2);
+    --background-color: rgb(43, 42, 51);
+    --text-color: rgba(251, 251, 254, 1);
+    --background-button-color-off: rgba(66, 65, 77, 1);
+    --background-button-color-on: rgba(100, 100, 120, 0.5);
+    --button-active-outline-color:rgb(0, 221, 255);
+    --shadow: 0 2px 6px rgba(255, 255, 255, 0.15);
+    --shadow-top: 0 -2px 6px rgba(255, 255, 255, 0.15);
+    --shadow-bottom: 0 2px 6px rgba(255, 255, 255, 0.15);
+}
