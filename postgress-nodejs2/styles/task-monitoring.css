@@ -1,0 +1,197 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;900&display=swap');
+@font-face {
+    font-family: 'Digital-time';
+    src: url('Font/Digital-font/DSDIGI.eot');
+    src: url('Font/Digital-font/DSDIGI.woff') format("woff"),
+    url('Font/Digital-font/DSDIGI.ttf') format("opentype")
+    }
+/* Global color variable */
+
+:root {
+    --primary-color: #14279B;
+    --secondary-color:#3D56B2;
+    --background-color: #ffffff;
+    --background-color-on: #f0f0f0;
+    --background-color-dark:#646464;
+    --text-color-light:#ececec;
+    --text-color:#272727;
+    --shadow-color: 0 5px 10px rgba(55, 60, 82, 0.05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+/* Common element*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+.time-container {
+    font-family: 'Digital-time', sans-serif;
+}
+button {
+    cursor: pointer;
+    border: rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0.0);
+    padding: 4px;
+    transition: all 0.3s ease;
+}
+button:hover{
+    color: var(--primary-color);
+    scale: 1.1;
+    transform:rotate(5deg);
+}
+button:active {
+    transform: translateY(4px);
+}
+header{
+    background-color: var(--primary-color);
+    padding: 16px;
+    color: var(--text-color-light);
+    letter-spacing: 2px;
+    text-align: center;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--text-color-light   );
+    text-align: center;
+ }
+main{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+/* Task */
+.stopwatch-box{
+    margin: 20px;
+    text-align: center;
+    border:solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: var(--secondary-color);
+    padding-bottom: 10px;
+}
+.stopwatch-control-buttons button{
+    margin:0px 5px 0px 5px;
+}
+.time{
+    font-size: 2rem;
+}
+.task-list{
+    display: grid;
+    grid-template-columns: auto;
+}
+.list-title{
+    border-bottom: solid;
+    border-width: 5px;
+    border-color: var(--secondary-color);
+}
+.task{
+    display: grid;
+    grid-template-columns: auto;
+    margin:15px;
+    padding:5px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    box-shadow: var(--shadow-color);
+    border-radius: 10px;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: solid;
+    border-width: 0.3px;
+    border-color: rgba(0, 0, 0, 0.0);
+}
+.task-title{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.add-task{
+    margin:auto;
+    padding:20px;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    box-shadow: var(--shadow-color);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    border: solid;
+    border-width: 0.3px;
+    border-color: rgba(0, 0, 0, 0.0);
+}
+.task-stopwatch{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    text-align: left;
+}
+.on{
+    margin-right: 0px;
+}
+
+ /*  Modal  */
+input[type=text],input[type=date] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    
+    font-family: 'Open Sans', sans-serif;
+}
+.modal-add-button {
+    width: 50%;
+    text-align: center;
+}
+.modal-container {
+    padding: 16px;
+}
+.clearfix{
+    text-align: center;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    }
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    border: 1px solid  var(--background-color-on);
+    width: 80%;
+}
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: var(--text-color-light);
+    font-size: 40px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    cursor: pointer;
+    color: var(--background-color-dark);
+    
+}

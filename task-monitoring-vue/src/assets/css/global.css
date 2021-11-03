@@ -1,0 +1,33 @@
+@import './header.css';
+@import './footer.css';
+@import './color-variable.css';
+@import './add-task.css';
+@import './add-task-modal.css';
+@import './task-list.css';
+@import './task.css';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;900&display=swap');
+
+html,body{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.app{
+  height: 100%;
+  background-color: var(--background-color);
+}
+button {
+  cursor: pointer;
+  border: rgba(0, 0, 0, 0.0);
+  padding: 4px;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+  background-color: rgba(0, 0, 0, 0.0);
+}
+button:hover{
+  scale: 1.2;
+}
+button:active {
+  transform: translateY(4px);
+}

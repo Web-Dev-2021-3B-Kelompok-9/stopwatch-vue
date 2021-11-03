@@ -1,0 +1,12 @@
+@import './color-variable.css';
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    box-shadow: var(--shadow-top);
+}
